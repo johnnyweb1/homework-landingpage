@@ -63,7 +63,7 @@ body {
 #container {
   width: 100%;
   margin: auto;
-  height: 500px;
+  height: 500px; /* Original value from template I think it's too big but they say to trust them :) */
 
 }
   header {
@@ -90,19 +90,33 @@ body {
 
 
 #benefits{
-  width: 100%
+  width: 100%; /* full width to get the white bg across the page*/ 
   margin: auto;
-  height: 400px;
+  padding-left: 10%; 
+  padding-top: 5%;
+  padding-right: 45%; /* offset the text away from the edge */
+  padding-bottom: 5%
+  height: 250px; /*estimate only */
   background-color: #f0efef;
   color: #606161;
 }
 
-      
-
+#signup{
+  width: 100%; /* full width to get the white bg across the page*/ 
+  margin: auto;
+  height: 100px; /*estimate only */
+  background-color: #f9e42e;/* yellow bg */
+  color: #606161; /* light grey */
+}
   
 
 
-footer {
+#base {
+  background-color: #121212; /* almost black */
+  height: 400px;
+}
+
+footer{
 
 }
 
@@ -111,17 +125,44 @@ footer {
 /*******************************************/
 
 h1 {
-    font-weight: 800;
+    font-weight: 800; /*Extra Bold */
     font-size: 24px;
   }
 
   h2 {
-    font-weight: 600;
+    font-weight: 600; /* Semi Bold */
     font-size: 24px;
     text-align: center;
   }
 
 #ben-font2 {
-    font-size: 20px;
+    font-size: 20px; /* Inherit font weight from h2 */
     text-align: left;
+}
+
+p{
+  font-weight: 300; /* light font */
+  font-size: 13px;
+}
+
+li{
+  font-weight: 300; /* light font */
+  font-size: 13px;
+}
+
+blockquote{
+  font-weight: 300; /* light font */
+  font-style: italic;
+  font-size: 18px;
+  width: 30%; /* guess really*/
+  padding-top: 5%; /* guess really */
+  margin: auto;
+  color: #f0efef; /* pincked the benefits background colour*/
+}
+
+h3{
+  color: #f0efef; /* pincked the benefits background colour*/
+  font-weight: 600; /* Semi Bold */
+  font-size: 18px;
+  text-align: center;
 }
