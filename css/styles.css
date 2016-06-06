@@ -46,33 +46,56 @@ Developer @GA in Melbourne
 /*******************************************/
 
 body {
-     color: #000;
+     color: #f0efef;
      font-size: 12px;
-     line-height: 1.4;
+     line-height: 2; /* Was originally set at 1.4 in the template - I think it needs to be higher to match the image if used at all */
      font-family: 'Open Sans', sans-serif;
-     background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
-      background-size: cover;
 }
+
+
 
 
 /******************************************
-/* LAYOUT
+/* MAIN LAYOUT
 /*******************************************/
 
-/* Center the container */
-#container {
-  width: 100%;
-  margin: auto;
-  height: 500px; /* Original value from template I think it's too big but they say to trust them :) */
-
-}
   header {
-      margin: auto;
-      width: 80%;
-      border: 0px solid #73AD21;
-      padding: 10px;
-      color: white;
+    background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    color: ;
+    height: 500px; /* sets the background picture to scale in the header */
   }
+
+  main{
+    width: 100%; /* full width to get the white bg across the page*/
+    margin: auto;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-right: 45%; /* offset the text away from the edge */
+    padding-bottom: 5%
+    height: 250px; /*estimate only */
+    background-color: #f0efef;
+    color: #606161;
+
+  }
+
+  aside{
+    background: url(../images/testimonial_bg.jpg) no-repeat center top rgb(134,141,157);
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    color: ##f0efef;
+    height: 250px; /* sets the background picture to scale in the header */
+  }
+
+  footer{
+
+  }
+  /******************************************
+  /* DIVISIONS WITHIN EACH SECTION
+  /*******************************************/
 
     #getit{
       width: 150px;
@@ -89,26 +112,16 @@ body {
     }
 
 
-#benefits{
-  width: 100%; /* full width to get the white bg across the page*/ 
-  margin: auto;
-  padding-left: 10%; 
-  padding-top: 5%;
-  padding-right: 45%; /* offset the text away from the edge */
-  padding-bottom: 5%
-  height: 250px; /*estimate only */
-  background-color: #f0efef;
-  color: #606161;
-}
+
 
 #signup{
-  width: 100%; /* full width to get the white bg across the page*/ 
+  width: 100%; /* full width to get the white bg across the page*/
   margin: auto;
   height: 100px; /*estimate only */
   background-color: #f9e42e;/* yellow bg */
   color: #606161; /* light grey */
 }
-  
+
 
 
 #base {
@@ -116,9 +129,7 @@ body {
   height: 400px;
 }
 
-footer{
 
-}
 
 /******************************************
 /* ADDITIONAL STYLES
@@ -154,7 +165,7 @@ blockquote{
   font-weight: 300; /* light font */
   font-style: italic;
   font-size: 18px;
-  width: 30%; /* guess really*/
+  width: 35%; /* guess really*/
   padding-top: 5%; /* guess really */
   margin: auto;
   color: #f0efef; /* pincked the benefits background colour*/
