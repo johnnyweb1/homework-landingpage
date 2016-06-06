@@ -41,15 +41,21 @@ Developer @GA in Melbourne
   padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
 
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
 body {
-     color: #f0efef;
-     font-size: 12px;
-     line-height: 2; /* Was originally set at 1.4 in the template - I think it needs to be higher to match the image if used at all */
+     color: #f0efef; /* base font colour for the page*/
+     /*font-size: 12px; deleted this for the moment*/
+     /* TODO: check this font size is used anywhere */
+     line-height: 1.4; /* Was originally set at 1.4 in the template - I think it needs to be higher to match the image if used at all */
      font-family: 'Open Sans', sans-serif;
+     margin:0;
+     display: flex;
+     flex-wrap: wrap;
+     border:0;
 }
 
 
@@ -64,18 +70,13 @@ body {
     background-size: cover;
     width: 100%;
     margin: auto;
-    color: ;
     height: 500px; /* sets the background picture to scale in the header */
   }
 
   main{
     width: 100%; /* full width to get the white bg across the page*/
     margin: auto;
-    padding-left: 10%;
-    padding-top: 5%;
-    padding-right: 45%; /* offset the text away from the edge */
-    padding-bottom: 5%
-    height: 250px; /*estimate only */
+    height: 250px; /* estimate only */
     background-color: #f0efef;
     color: #606161;
 
@@ -93,26 +94,72 @@ body {
   footer{
 
   }
+
+
   /******************************************
-  /* DIVISIONS WITHIN EACH SECTION
+  /* HEADER CLASSES
   /*******************************************/
 
-    #getit{
+  .top_header{
+    padding-top: 30px;
+    padding-left: 10%;
+    height: 130px;
+    width: 100%;
+    font-weight: 800; /*Extra Bold */
+    font-size: 24px;
+  }
+
+  .mid_header{
+
+    padding-top: 45px; /* centre the text in a 130px block */
+    height: 130px;
+    width: 100%;
+    font-weight: 600; /* Semi Bold */
+    font-size: 24px;
+    text-align: center;
+  }
+
+    .base_header{
       width: 150px;
       height: 40px;
-      padding: 10px;
-      margin left: auto; /* can't get this thing to centre, tried block and inine block */
-      margin right: auto;
+      padding: 5px;
       background: #f9e42e;
       border-radius: 5px;
       font-weight: 800;
       font-size: 14px;
       color: #606161;
       text-align: center;
+      margin-left: auto;
+      margin-right: auto;
     }
 
+    /******************************************
+    /* MAIN CLASSES
+    /*******************************************/
 
+    .top_main{
+      padding-top: 10px;
+      padding-left: 10%;
+      height: 50px;
+      width: 100%;
+      font-weight: 600; /* Semi Bold */
+      font-size: 20px;
+    }
 
+    .mid_main{
+      padding-left: 10%;
+      height: 50px;
+      width: 60%;
+      font-weight: 300; /* light font */
+      font-size: 13px;
+    }
+
+    .base_main{
+      padding-left: 15%;
+      width: 60%;
+      font-weight: 300; /* light font */
+      font-size: 13px;
+    }
 
 #signup{
   width: 100%; /* full width to get the white bg across the page*/
@@ -136,14 +183,11 @@ body {
 /*******************************************/
 
 h1 {
-    font-weight: 800; /*Extra Bold */
-    font-size: 24px;
+
   }
 
   h2 {
-    font-weight: 600; /* Semi Bold */
-    font-size: 24px;
-    text-align: center;
+
   }
 
 #ben-font2 {
