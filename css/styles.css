@@ -17,152 +17,205 @@ Developer @GA in Melbourne
      box-sizing: border-box; /* IE */
 }
 
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
 
-.clear {
-  clear: both;
-}
-
-.alignright {
-  float: right;
-  padding: 0 0 10px 10px; /* note the padding around a right floated image */
-}
-
-.alignleft {
-  float: left;
-  padding: 0 10px 10px 0; /* note the padding around a left floated image */
-}
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
 body {
-     color: #000;
-     font-size: 12px;
-     line-height: 1.4;
+     color: #f0efef; /* base font colour for the page*/
+     /*font-size: 12px; deleted this for the moment*/
+     /* TODO: check this font size is used anywhere */
+     line-height: 1.4; /* Was originally set at 1.4 in the template - I think it needs to be higher to match the image if used at all */
      font-family: 'Open Sans', sans-serif;
-     background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
-      background-size: cover;
+     margin:0;
+     display: flex;
+     flex-wrap: wrap;
+     border:0;
+}
+
+img
+{
+margin: 30px; /* pad images with a 30 pixel boarder all around */
 }
 
 
 /******************************************
-/* LAYOUT
+/* MAIN LAYOUT
 /*******************************************/
 
-/* Center the container */
-#container {
-  width: 100%;
-  margin: auto;
-  height: 500px; /* Original value from template I think it's too big but they say to trust them :) */
-
-}
   header {
-      margin: auto;
-      width: 80%;
-      border: 0px solid #73AD21;
-      padding: 10px;
-      color: white;
+    background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    height: 650px;/* sets the background picture to scale in the header */
   }
 
-    #getit{
-      width: 150px;
-      height: 40px;
-      padding: 10px;
-      margin left: auto; /* can't get this thing to centre, tried block and inine block */
-      margin right: auto;
-      background: #f9e42e;
-      border-radius: 5px;
-      font-weight: 800;
-      font-size: 14px;
-      color: #606161;
-      text-align: center;
-    }
+  main{
+    width: 100%; /* full width to get the white bg across the page*/
+    margin: auto;
+    height: 630px; /* estimate only */
+    background-color: #f0efef;
+    color: #606161;
 
-
-#benefits{
-  width: 100%; /* full width to get the white bg across the page*/ 
-  margin: auto;
-  padding-left: 10%; 
-  padding-top: 5%;
-  padding-right: 45%; /* offset the text away from the edge */
-  padding-bottom: 5%
-  height: 250px; /*estimate only */
-  background-color: #f0efef;
-  color: #606161;
-}
-
-#signup{
-  width: 100%; /* full width to get the white bg across the page*/ 
-  margin: auto;
-  height: 100px; /*estimate only */
-  background-color: #f9e42e;/* yellow bg */
-  color: #606161; /* light grey */
-}
-  
-
-
-#base {
-  background-color: #121212; /* almost black */
-  height: 400px;
-}
-
-footer{
-
-}
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
-
-h1 {
-    font-weight: 800; /*Extra Bold */
-    font-size: 24px;
   }
 
-  h2 {
-    font-weight: 600; /* Semi Bold */
-    font-size: 24px;
+  aside{
+    background: url(../images/testimonial_bg.jpg) no-repeat center top rgb(134,141,157);
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    color: ##f0efef;
+    height: 400px; /* sets the background picture to scale in the header */
+
+  }
+
+  footer{
+    width: 100%; /* full width to get the white bg across the page*/
+    margin: auto;
+    height: 300px; /* estimate only */
+    background-color: yellow;/* yellow bg */
     text-align: center;
   }
 
-#ben-font2 {
-    font-size: 20px; /* Inherit font weight from h2 */
-    text-align: left;
-}
 
-p{
-  font-weight: 300; /* light font */
-  font-size: 13px;
-}
+  /******************************************
+  /* HEADER CLASSES
+  /*******************************************/
 
-li{
-  font-weight: 300; /* light font */
-  font-size: 13px;
-}
+  .top_header{
+    padding-top: 30px;
+    padding-left: 10%;
+    height: 130px;
+    width: 100%;
+    font-weight: 800; /*Extra Bold */
+    font-size: 48px;
+  }
 
-blockquote{
-  font-weight: 300; /* light font */
-  font-style: italic;
-  font-size: 18px;
-  width: 30%; /* guess really*/
-  padding-top: 5%; /* guess really */
-  margin: auto;
-  color: #f0efef; /* pincked the benefits background colour*/
-}
+  .mid_header{
 
-h3{
-  color: #f0efef; /* pincked the benefits background colour*/
-  font-weight: 600; /* Semi Bold */
-  font-size: 18px;
-  text-align: center;
-}
+    padding-top: 45px; /* centre the text in a 130px block */
+    height: 200px;
+    width: 100%;
+    font-weight: 600; /* Semi Bold */
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .base_header{
+    width: 300px;
+    height: 60px;
+    padding: 10px;
+    background: #f9e42e;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 28px;
+    color: #606161;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/******************************************
+/* MAIN CLASSES
+/*******************************************/
+
+  .top_main{
+    padding-top: 100px;
+    padding-left: 10%;
+    padding-bottom: 80px;
+    height: 100px;
+    width: 100%;
+    font-weight: 600; /* Semi Bold */
+    font-size: 40px;
+  }
+
+  .mid_main{
+    padding-left: 10%;
+    height: 130px;
+    width: 60%;
+    font-weight: 300; /* light font */
+    font-size: 26px;
+  }
+
+  .base_main{
+    padding-left: 15%;
+    width: 60%;
+    font-weight: 300; /* light font */
+    font-size: 30px;
+  }
+
+/******************************************
+/* ASIDE CLASSES
+/*******************************************/
+
+  .top_aside{
+    font-weight: 300; /* light font */
+    font-style: italic;
+    font-size: 36px;
+    width: 45%; /* guess really*/
+    padding-top: 50px; /* guess really */
+    margin: auto;
+    color: #f0efef; /* pincked the benefits background colour*/
+
+  }
+
+  .base_aside{
+    font-weight: 600; /* Semi Bold */
+    font-size: 36px;
+    width: 45%; /* guess really*/
+    padding-top: 10px;
+    margin: auto;
+    color: #f0efef; /* pincked the benefits background colour*/
+    text-align: center;
+  }
+
+  #base {
+    background-color: #121212; /* almost black */
+    height: 400px;
+  }
+
+
+/******************************************
+/* FOOTER CLASSES
+/*******************************************/
+  .spacer_footer{
+    height: 30px;
+    width: 100%;
+  }
+  .top_footer{
+
+    width: 300px;
+    height: 60px;
+    padding-top: 35px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 28px;
+    color: #white;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #033048; /* dark blue as per design file */
+  }
+
+  .mid_footer{
+    height: 250px;
+    width: 100%;
+    padding-top: 40px;
+    font-weight: 800; /*Extra Bold */
+    font-size: 50px;
+    color: #f9e42e; /* design file yellow */
+    background-color: #121212; /* almost black from design file*/
+  }
+
+  .base_footer{
+    height: 100px;
+    width: 100%;
+
+    font-weight: 600; /* Semi Bold */
+    font-size: 18px;
+    color: white;
+    background-color: #121212; /* almost black from design file*/
+  }
