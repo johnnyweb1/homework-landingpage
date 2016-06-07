@@ -25,9 +25,7 @@ Developer @GA in Melbourne
 
 body {
      color: #f0efef; /* base font colour for the page*/
-     /*font-size: 12px; deleted this for the moment*/
-     /* TODO: check this font size is used anywhere */
-     line-height: 1.4; /* Was originally set at 1.4 in the template - I think it needs to be higher to match the image if used at all */
+     line-height: 1.4; /* Was originally set at 1.4 in the template  */
      font-family: 'Open Sans', sans-serif;
      margin:0;
      display: flex;
@@ -50,7 +48,7 @@ margin: 30px; /* pad images with a 30 pixel boarder all around */
     background-size: cover;
     width: 100%;
     margin: auto;
-    height: 650px;/* sets the background picture to scale in the header */
+    height: 650px;/* estimate based on image file */
   }
 
   main{
